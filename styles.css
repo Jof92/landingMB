@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000112;
+}
+header {
+    
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header img{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 10rem;
+    transition: transform 1s ease;
+}
+
+header img:hover {
+    transform: rotateY(360deg); 
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.text{
+    color: aliceblue;
+    line-height: 1.5; 
+    opacity: 0;
+    animation: slideFade 5s forwards; 
+}
+
+.text p, text h2 {
+    margin: 0;
+    text-transform: uppercase;
+   
+}
+
+.text h2 {
+    display: inline;
+    text-transform: uppercase;
+   
+}
+
+.icone a {
+    font-size: 50px;
+    color: antiquewhite;
+    text-decoration: none;
+    transition: color 0.8s ease;
+    display: inline-block;
+}
+
+.icone div p{
+    margin: 0;
+}
+
+.icone a:hover {
+    color: #25D366;
+    font-size: 55px;
+}
+
+.icone p{
+    font-size: 20px;
+    
+}
+footer {
+    background-color: #000114;;
+    color: #ffffff73;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    font-size: .6em;
+    bottom: 0;
+   
+}
+
+@keyframes slideFade {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
